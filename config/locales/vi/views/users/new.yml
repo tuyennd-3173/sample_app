@@ -1,0 +1,5 @@
+vi:
+  users:
+    new:
+      signup: "Đăng ký"
+      submit_signup: "Tạo tài khoản của tôi"

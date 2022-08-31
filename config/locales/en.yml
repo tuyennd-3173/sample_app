@@ -31,3 +31,13 @@
 
 en:
   base_title: "Ruby on Rails Tutorial Sample App"
+  success_tit: "Welcome to the Sample App!"
+  activerecord:
+    models:
+      user: "User"
+    attributes:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Confirmation"
