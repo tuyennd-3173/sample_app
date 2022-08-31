@@ -1,0 +1,12 @@
+<footer class="footer">
+  <%= t ".des_html" %>
+  <nav>
+    <ul>
+        <li><%= link_to t(".about"), about_path %></li>
+        <li><%= link_to t(".contact"), contact_path %></li>
+        <li><a href="https://news.railstutorial.org/"><%= t ".news" %></a></li>
+        <li><%= link_to t(".en"), locale: :en %></li>
+        <li><%= link_to t(".vi"), locale: :vi %></li>
+    </ul>
+  </nav>
+</footer>

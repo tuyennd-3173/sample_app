@@ -1,0 +1,12 @@
+vi:
+  layouts:
+    footer:
+      des_html: <small>
+                  <a href="https://www.railstutorial.org/">Ruby on Rails hướng dẫn</a>
+                  bởi <a href="https://www.michaelhartl.com/">Michael Hartl</a>
+                </small>
+      about: "Vấn đề"
+      contact: "Liên hệ"
+      news: "Tin tức"
+      en: "Tiếng Anh"
+      vi: "Tiếng Việt"

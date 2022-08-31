@@ -1,0 +1,8 @@
+vi:
+  static_pages:
+    help:
+      help: "Giúp đỡ"
+      des_html: <p>
+                  Cần giúp đỡ trong Sample App, hãy xem
+                  <a href="http://www.railstutorial.org/book"><em>Ruby on Rails Tutorial</em> sách</a>.
+                </p>

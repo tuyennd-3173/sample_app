@@ -1,0 +1,11 @@
+vi:
+  static_pages:
+    home:
+      home: "Trang chủ"
+      title: "Chào mừng đến với Sample App"
+      des_html: <h2>
+                  Đây là trang chủ của
+                  <a href="https://www.railstutorial.org/">Hướng dẫn Ruby on Rails</a>
+                  ứng dụng mẫu.
+                </h2>
+      signup: "Đăng kí ngay!"

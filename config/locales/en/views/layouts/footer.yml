@@ -1,0 +1,12 @@
+en:
+  layouts:
+    footer:
+      des_html: <small>
+                  The <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+                  by <a href="https://www.michaelhartl.com/">Michael Hartl</a>
+                </small>
+      about: "About"
+      contact: "Contact"
+      news: "News"
+      en: "English"
+      vi: "Vietnam"
