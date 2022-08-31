@@ -1,6 +1,7 @@
 vi:
   base_title: "Hướng dẫn Ruby on Rails ứng dụng mẫu"
   success_tit: "Chào mừng bạn đến với Sample App"
+  invalid_user: "Email hoặc mật khẩu không hợp lệ!"
   activerecord:
     models:
       user: "Người dùng"
@@ -10,3 +11,14 @@ vi:
         email: "Địa chỉ email"
         password: "Mật khẩu"
         password_confirmation: "Xác nhận mật khẩu"
+  sessions:
+    new:
+      login: "Đăng nhập"
+      new_user: "Người dùng mới? "
+      sign_up_now: "Đăng ký ngay!"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+  shared:
+    error_messages:
+      message1: "Chứa "
+      message2: " lỗi"

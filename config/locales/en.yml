@@ -32,6 +32,7 @@
 en:
   base_title: "Ruby on Rails Tutorial Sample App"
   success_tit: "Welcome to the Sample App!"
+  invalid_user: "Invalid email or password!"
   activerecord:
     models:
       user: "User"
@@ -41,3 +42,14 @@ en:
         email: "Email"
         password: "Password"
         password_confirmation: "Confirmation"
+  sessions:
+    new:
+      login: "Log in"
+      new_user: "New user? "
+      sign_up_now: "Sign up now!"
+      email: "Email"
+      password: "Password"
+  shared:
+    error_messages:
+      message1: "The form contain "
+      message2: " error"
