@@ -1,0 +1,7 @@
+vi:
+  layouts:
+    header:
+      logo: "SAMPLE APP"
+      home: "Trang chủ"
+      help: "Giúp đỡ"
+      login: "Đăng nhập"

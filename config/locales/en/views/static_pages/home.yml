@@ -1,0 +1,11 @@
+en:
+  static_pages:
+    home:
+      home: "Home"
+      title: "Welcome to the Sample App"
+      des_html: <h2>
+                  This is the homepage for the
+                  <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+                  sample application.
+                </h2>
+      signup: "Sign up now!"

@@ -1,0 +1,8 @@
+vi:
+  static_pages:
+    contact:
+      contact: "Liên hệ"
+      des_html: <p>
+                  Liên hệ về Ruby on Rails Tutorial Sample app trên
+                  <a href="https://www.railstutorial.org/contact">trang liên hệ</a>.
+                </p>
