@@ -1,2 +1,12 @@
 vi:
   base_title: "Hướng dẫn Ruby on Rails ứng dụng mẫu"
+  success_tit: "Chào mừng bạn đến với Sample App"
+  activerecord:
+    models:
+      user: "Người dùng"
+    attributes:
+      user:
+        name: "Tên"
+        email: "Địa chỉ email"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
