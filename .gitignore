@@ -39,3 +39,5 @@ yarn-debug.log*
 .browserslistrc
 /config/credentials.yml.enc
 test/
+.framgia-ci-reports/
+.framgia-ci-result.temp.yml
