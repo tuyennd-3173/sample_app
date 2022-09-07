@@ -18,6 +18,7 @@ vi:
       sign_up_now: "Đăng ký ngay!"
       email: "Địa chỉ email"
       password: "Mật khẩu"
+      remember_me: "Ghi nhớ đăng nhập trên thiết bị này"
   shared:
     error_messages:
       message1: "Chứa "

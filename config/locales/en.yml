@@ -49,6 +49,7 @@ en:
       sign_up_now: "Sign up now!"
       email: "Email"
       password: "Password"
+      remember_me: "Remember me on this computer"
   shared:
     error_messages:
       message1: "The form contain "
