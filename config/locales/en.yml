@@ -30,9 +30,12 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  base_title: "Ruby on Rails Tutorial Sample App"
+  login: "Log in"
   success_tit: "Welcome to the Sample App!"
-  invalid_user: "Invalid email or password!"
+  users:
+    create:
+      account_active_tit: "Please check your email to activate your account."
+      account_active_fail: "Signup failed"
   activerecord:
     models:
       user: "User"
@@ -50,7 +53,24 @@ en:
       email: "Email"
       password: "Password"
       remember_me: "Remember me on this computer"
+    create:
+      invalid_user: "Invalid email or password!"
+      message_activate: "Your account is already activated! Check your email for the activation link."
   shared:
     error_messages:
       message1: "The form contain "
       message2: " error"
+  user_mailer:
+    account_activation:
+      account_activation: "Activate account"
+      title: "Sample App"
+      hi: "Hi "
+      text: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+  account_activations:
+    edit:
+      account_activated: "Account activated!"
+      account_activated_fail: "Invalid activation link"
+  layouts:
+    application:
+      base_title: "Ruby on Rails Tutorial Sample App"
