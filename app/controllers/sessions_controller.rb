@@ -4,9 +4,9 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by email: params[:session][:email].downcase
     if user&.authenticate params[:session][:password]
-      create_session user
+      activate user
     else
-      flash.now[:danger] = I18n.t(".invalid_user")
+      flash.now[:danger] = t ".invalid_user"
       render :new
     end
   end

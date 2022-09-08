@@ -1,0 +1,8 @@
+en:
+  user_mailer:
+    account_activation:
+      account_activation: "Xác thực tài khoản"
+      title: "Ứng dụng mẫu"
+      hi: "Chào "
+      text: "Chào mừng đến với Ứng dụng mẫu! Truy cập vào liên kết bên dưới để xác thực tài khoản:"
+      activate: "Xác thực hoạt động"

@@ -30,9 +30,12 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  base_title: "Ruby on Rails Tutorial Sample App"
+  login: "Log in"
   success_tit: "Welcome to the Sample App!"
-  invalid_user: "Invalid email or password!"
+  users:
+    create:
+      account_active_tit: "Please check your email to activate your account."
+      account_active_fail: "Signup failed"
   activerecord:
     models:
       user: "User"
@@ -50,7 +53,41 @@ en:
       email: "Email"
       password: "Password"
       remember_me: "Remember me on this computer"
+      forgot_password: "Forgot password?"
+    create:
+      invalid_user: "Invalid email or password!"
+      message_activate: "Your account is already activated! Check your email for the activation link."
   shared:
     error_messages:
-      message1: "The form contain "
-      message2: " error"
+      message: "The form contain %{count} error"
+  user_mailer:
+    account_activation:
+      account_activation: "Activate account"
+      title: "Sample App"
+      hi: "Hi "
+      text: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+    password_reset:
+      password_reset: "Password reset"
+      text: "To reset your password click the link below:"
+      text_1: "This link will expire in two hours."
+      text_2: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+  account_activations:
+    edit:
+      account_activated: "Account activated!"
+      account_activated_fail: "Invalid activation link"
+  layouts:
+    application:
+      base_title: "Ruby on Rails Tutorial Sample App"
+  password_resets:
+    create:
+      send_pass_reset: "Email sent with password reset instructions"
+      invalid_email: "Email address not found"
+    update:
+      empty_password: "Cann't be empty"
+      reset_successful: "Password has been reset"
+      reset_failed: "Password has been reset failed"
+    edit:
+      user_invalid: "User is invalid with email!"
+      user_not_active: "User is not activated or link is invalid"
+      password_reset_expired: "Password reset has expired"

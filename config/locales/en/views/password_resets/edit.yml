@@ -1,0 +1,7 @@
+en:
+  password_resets:
+    edit:
+      reset_password: "Reset password"
+      update_password: "Update password"
+      confirmation: "Confirmation"
+      password: "Password"

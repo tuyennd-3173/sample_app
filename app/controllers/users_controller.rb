@@ -9,12 +9,14 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.new user_params
     if @user.save
-      flash[:success] = I18n.t(".success_tit")
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".account_active_tit"
+      redirect_to login_path
     else
-      render "new"
+      flash[:danger] = t ".account_active_fail"
+      render :new
     end
   end
 

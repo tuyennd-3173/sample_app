@@ -5,3 +5,8 @@ vi:
       home: "Trang chủ"
       help: "Giúp đỡ"
       login: "Đăng nhập"
+      users: "Người dùng"
+      account: "Tài khoản "
+      profile: "Thông tin"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"

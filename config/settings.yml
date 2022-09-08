@@ -4,3 +4,5 @@ length:
   digit_10: 10
   digit_20: 20
   digit_255: 255
+expired:
+  reset_2_hours: 2
