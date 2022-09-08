@@ -42,4 +42,16 @@ module SessionsHelper
     params[:session][:remember_me] == "1" ? remember(user) : forget(user)
     redirect_to user
   end
+
+  def activate user
+    if user.activated?
+      create_session user
+      log_in user
+      params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+      user
+    else
+      flash[:warning] = t ".message_activate"
+      root_path
+    end
+  end
 end
