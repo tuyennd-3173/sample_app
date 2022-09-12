@@ -57,6 +57,9 @@ en:
       invalid_user: "Invalid email or password!"
       message_activate: "Your account is already activated! Check your email for the activation link."
   shared:
+    stats:
+      following: "following"
+      followers: "followers"
     error_messages:
       message: "The form contain %{count} error"
     user_info:
@@ -123,6 +126,17 @@ en:
     user:
       delete: "Delete"
       sure_delete: "You sure delete?"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      my_profile: "view my profile"
+      microposts_title_html: <h3> Microposts (%{count}) </h3>
+    following:
+      following: "Following"
+    followers:
+      followers: "Followers"
   microposts:
     create:
       micropost_created_success: "Micropost created!"
@@ -135,3 +149,6 @@ en:
       delete: "Delete"
       sure_delete: "You sure delete?"
       time_posted: "Posted %{time} ago."
+  relationships:
+    destroy:
+      invalid_relationship: "Invalid relationships"
