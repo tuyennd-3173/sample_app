@@ -36,6 +36,8 @@ en:
     create:
       account_active_tit: "Please check your email to activate your account."
       account_active_fail: "Signup failed"
+    edit:
+      change: "Change"
   activerecord:
     models:
       user: "User"
@@ -44,7 +46,7 @@ en:
         name: "Name"
         email: "Email"
         password: "Password"
-        password_confirmation: "Confirmation"
+        password_confirmation: "Password confirmation"
   sessions:
     new:
       login: "Log in"
@@ -91,3 +93,22 @@ en:
       user_invalid: "User is invalid with email!"
       user_not_active: "User is not activated or link is invalid"
       password_reset_expired: "Password reset has expired"
+  users:
+    edit:
+      user_invalid: "Not found users!"
+      title: "Edit user"
+      des: "Update your profile"
+      confirmation: "Confirmation"
+      save_changes: "Save changes"
+    update:
+      update_success: "Profile updated successfully"
+      update_error: "Profile updated failed"
+      logged_in: "Please log in"
+      user_edit_fail: "You cannot edit this account"
+    index:
+      all_users: "All users"
+    destroy:
+      delete_success: "User deleted successfully"
+      delete_failed: "User deleted failed"
+    user:
+      delete: "Delete"

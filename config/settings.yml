@@ -3,6 +3,11 @@ length:
   digit_6: 6
   digit_10: 10
   digit_20: 20
+  digit_50: 50
   digit_255: 255
 expired:
   reset_2_hours: 2
+pagy:
+  page_10: 10
+size:
+  digit_80: 80

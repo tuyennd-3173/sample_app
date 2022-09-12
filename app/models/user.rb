@@ -4,7 +4,7 @@ class User < ApplicationRecord
   before_save :downcase_email
   before_create :create_activation_digest
 
-  validates :name, presence: true
+  validates :name, presence: true, length: {maximum: Settings.length.digit_50}
   validates :email, presence: true,
             length: {
               minimum: Settings.length.digit_20,
