@@ -1,0 +1,5 @@
+en:
+  password_resets:
+    new:
+      forgot_password: "Forgot password"
+      submit: "Submit"

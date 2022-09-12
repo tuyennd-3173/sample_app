@@ -1,0 +1,5 @@
+vi:
+  password_resets:
+    new:
+      forgot_password: "Quên mật khẩu"
+      submit: "Gửi"

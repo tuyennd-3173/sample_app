@@ -17,5 +17,6 @@ Rails.application.routes.draw do
 
     resources :users, only: %i(new create show)
     resources :account_activations, only: :edit
+    resources :password_resets, only: %i(new create edit update)
   end
 end

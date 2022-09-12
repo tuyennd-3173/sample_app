@@ -1,0 +1,7 @@
+vi:
+  password_resets:
+    edit:
+      reset_password: "Đặt lại mật khẩu"
+      update_password: "Cập nhật mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+      password: "Mật khẩu"
