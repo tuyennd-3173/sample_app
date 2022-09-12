@@ -32,12 +32,9 @@
 en:
   login: "Log in"
   success_tit: "Welcome to the Sample App!"
-  users:
-    create:
-      account_active_tit: "Please check your email to activate your account."
-      account_active_fail: "Signup failed"
-    edit:
-      change: "Change"
+  valid_image: "must be a valid image format"
+  size_image: "should be less than 5MB"
+  maxsize: "Maximum file size is 5MB. Please choose a smaller file."
   activerecord:
     models:
       user: "User"
@@ -62,6 +59,12 @@ en:
   shared:
     error_messages:
       message: "The form contain %{count} error"
+    user_info:
+      view_profile: "View my profile"
+      micropost: "micropost"
+    micropost_form:
+      compose_micropost: "Compose new micropost..."
+      post: "Post"
   user_mailer:
     account_activation:
       account_activation: "Activate account"
@@ -91,6 +94,7 @@ en:
       reset_failed: "Password has been reset failed"
     edit:
       user_invalid: "User is invalid with email!"
+      user_activate: "User was in activated"
       user_not_active: "User is not activated or link is invalid"
       password_reset_expired: "Password reset has expired"
   users:
@@ -100,6 +104,7 @@ en:
       des: "Update your profile"
       confirmation: "Confirmation"
       save_changes: "Save changes"
+      change: "Change"
     update:
       update_success: "Profile updated successfully"
       update_error: "Profile updated failed"
@@ -110,5 +115,23 @@ en:
     destroy:
       delete_success: "User deleted successfully"
       delete_failed: "User deleted failed"
+    create:
+      account_active_tit: "Please check your email to activate your account."
+      account_active_fail: "Signup failed"
+    show:
+      microposts_title_html: <h3> Microposts (%{count}) </h3>
     user:
       delete: "Delete"
+      sure_delete: "You sure delete?"
+  microposts:
+    create:
+      micropost_created_success: "Micropost created!"
+      micropost_created_fail: "Micropost created failed!"
+    destroy:
+      micropost_deleted_success: "Micropost deleted!"
+      micropost_deleted_fail: "Deleted failed"
+      micropost_invalid: "Micropost invalid"
+    micropost:
+      delete: "Delete"
+      sure_delete: "You sure delete?"
+      time_posted: "Posted %{time} ago."
