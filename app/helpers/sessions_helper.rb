@@ -19,6 +19,10 @@ module SessionsHelper
     current_user.present?
   end
 
+  def current_user? user
+    user == current_user
+  end
+
   def remember user
     user.remember
     cookies.permanent.signed[:user_id] = user.id
@@ -40,7 +44,16 @@ module SessionsHelper
   def create_session user
     log_in user
     params[:session][:remember_me] == "1" ? remember(user) : forget(user)
-    redirect_to user
+    redirect_back_or user
+  end
+
+  def redirect_back_or default = root_path
+    redirect_to(session[:forwarding_url] || default)
+    session.delete(:forwarding_url)
+  end
+
+  def store_location
+    session[:forwarding_url] = request.original_url if request.get?
   end
 
   def activate user

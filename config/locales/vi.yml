@@ -5,6 +5,8 @@ vi:
     create:
       account_active_tit: "Xác thực tài khoản qua email"
       account_active_fail: "Đăng kí tài khoản thất bại"
+    edit:
+      change: "Thay đổi"
   activerecord:
     models:
       user: "Người dùng"
@@ -60,3 +62,22 @@ vi:
       user_invalid: "Không tìm thấy người dùng với địa chỉ email này!"
       user_not_active: "Người dùng chưa kích hoạt hoặc liên kết sai"
       password_reset_expired: "Đặt lại mật khẩu đã hết hạn"
+  users:
+    edit:
+      user_invalid: "Không tìm thấy người dùng!"
+      title: "Chỉnh sửa người dùng"
+      des: "Cập nhập thông tin của bạn"
+      confirmation: "Xác nhận mật khẩu"
+      save_changes: "Lưu thay đổi"
+    update:
+      update_success: "Thông tin được cập nhật thành công"
+      update_error: "Cập nhật thông tin thất bại"
+      logged_in: "Vui lòng đăng nhập"
+      user_edit_fail: "Bạn không thể sửa tài khoản này"
+    index:
+      all_users: "Tất cả người dùng"
+    destroy:
+      delete_success: "Xóa người dùng thành công"
+      delete_failed: "Xóa người dùng thất bại"
+    user:
+      delete: "Xóa"
