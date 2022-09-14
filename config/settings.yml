@@ -4,6 +4,7 @@ length:
   digit_10: 10
   digit_20: 20
   digit_50: 50
+  digit_140: 140
   digit_255: 255
 expired:
   reset_2_hours: 2
@@ -11,3 +12,8 @@ pagy:
   page_10: 10
 size:
   digit_80: 80
+image:
+  format: "%w[image/jpeg image/gif image/png]"
+  format_img: "image/jpeg,image/gif,image/png"
+  size_5: 5
+  range_500: [500,500]

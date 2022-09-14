@@ -1,4 +1,6 @@
 module UsersHelper
+  include Pagy::Frontend
+
   def gravatar_for user, options = {size: Settings.size.digit_80}
     size = options[:size]
     gravatar_id = Digest::MD5.hexdigest(user.email.downcase)

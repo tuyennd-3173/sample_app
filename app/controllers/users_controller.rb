@@ -23,7 +23,9 @@ class UsersController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @page, @microposts = pagy @user.microposts, items: Settings.pagy.page_10
+  end
 
   def edit; end
 
@@ -44,17 +46,9 @@ class UsersController < ApplicationController
       flash[:danger] = t ".delete_failed"
     end
     redirect_to users_path
-  endaccess
+  end
 
   private
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t ".logged_in"
-    redirect_to login_url
-  end
 
   def user_params
     params.require(:user).permit(
