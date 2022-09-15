@@ -1,18 +1,22 @@
 vi:
   login: "Đăng nhập"
   success_tit: "Chào mừng bạn đến với Sample App"
-  valid_image: "phải đúng định dạng hình ảnh"
+  valid_image: "phải đúng định dạng"
   size_image: "hình ảnh phải nhỏ hơn 5MB"
   maxsize: "Kích thước hình lớn nhất là 5MB. Hãy chọn kích thước nhỏ hơn."
   activerecord:
     models:
       user: "Người dùng"
+      micropost: "Bài viết"
     attributes:
       user:
         name: "Tên"
         email: "Địa chỉ email"
         password: "Mật khẩu"
         password_confirmation: "Xác nhận mật khẩu"
+      micropost:
+        content: "Nội dung"
+        image: "Hình ảnh"
   sessions:
     new:
       login: "Đăng nhập"
@@ -26,6 +30,9 @@ vi:
       invalid_user: "Email hoặc mật khẩu sai!"
       message_activate: "Tài khoản của bạn đang xác thực. Hãy vào email để xác thực!"
   shared:
+    stats:
+      following: "đang theo dõi"
+      followers: "được theo dõi"
     error_messages:
       message: "Chứa %{count} lỗi"
     user_info:
@@ -92,6 +99,17 @@ vi:
     user:
       delete: "Xóa"
       sure_delete: "Chắc chắn xóa?"
+    follow:
+      follow: "Theo dõi"
+    unfollow:
+      unfollow: "Hủy theo dõi"
+    show_follow:
+      my_profile: "xem thông tin của tôi"
+      microposts_title_html: <h3> Bài đăng (%{count}) </h3>
+    following:
+      following: "Đang theo dõi"
+    followers:
+      followers: "Được theo dõi"
   microposts:
     create:
       micropost_created_success: "Tạo bài viết thành công!"
@@ -104,3 +122,6 @@ vi:
       delete: "Xóa"
       sure_delete: "Bạn chắc chắn xóa?"
       time_posted: "Đã đăng %{time} trước."
+  relationships:
+    destroy:
+      invalid_relationship: "Không tồn tại mối quan hệ"

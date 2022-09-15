@@ -8,9 +8,7 @@ class MicropostsController < ApplicationController
       flash[:success] = t ".micropost_created_success"
       redirect_to root_url
     else
-      flash.new[:danger] = t ".micropost_created_fail"
-      @pagy, @feed_items = pagy current_user.feed, items: Settings.pagy.page_10
-      render "static_pages/home"
+      create_fail
     end
   end
 
@@ -21,6 +19,12 @@ class MicropostsController < ApplicationController
       flash[:danger] = t ".micropost_deleted_fail"
     end
     redirect_to request.referer || root_url
+  end
+
+  def create_fail
+    flash.now[:danger] = t ".micropost_created_fail"
+    @pagy, @feed_items = pagy current_user.feed, items: Settings.pagy.page_10
+    render "static_pages/home"
   end
 
   private

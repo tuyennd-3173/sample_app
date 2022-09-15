@@ -13,7 +13,7 @@ pagy:
 size:
   digit_80: 80
 image:
-  format: "%w[image/jpeg image/gif image/png]"
+  format: ["image/jpeg", "image/gif", "image/png"]
   format_img: "image/jpeg,image/gif,image/png"
   size_5: 5
   range_500: [500,500]

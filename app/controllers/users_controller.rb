@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @pagy, @users = pagy(User.all, items: Settings.pagy.page_10)
+    @pagy, @users = pagy User.all, items: Settings.pagy.page_10
   end
 
   def new
@@ -48,20 +48,24 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
 
+  def following
+    @title = t ".following"
+    @pagy, @users = pagy @user.following, items: Settings.pagy.page_10
+    render :show_follow
+  end
+
+  def followers
+    @title = t ".followers"
+    @pagy, @users = pagy @user.followers, items: Settings.pagy.page_10
+    render :show_follow
+  end
+
   private
 
   def user_params
     params.require(:user).permit(
       :name, :email, :password, :password_confirmation
     )
-  end
-
-  def load_user
-    @user = User.find_by id: params[:id]
-    return if @user
-
-    flash[:danger] = t ".user_invalid"
-    redirect_to root_url
   end
 
   def correct_user
